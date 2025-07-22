@@ -25,3 +25,6 @@ console.log(fullName.toUpperCase());
 
 let result = fullName.toUpperCase()
 console.log(result, fullName);
+
+let index = email.indexOf('@')
+console.log(index);
