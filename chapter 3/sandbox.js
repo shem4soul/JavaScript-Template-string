@@ -89,12 +89,23 @@ switch (grade) {
     console.log("You got an C");
     break;
   case "D":
-    console.log("You got an D!");
+    // console.log("You got an D!");
     break;
   case "E":
     console.log("You got an E!");
     break;
   default:
-    console.log('Not a valid grade');
+    //console.log('Not a valid grade');
     
 }
+
+// variable & block scope
+let age = 30;
+
+if (true) {
+    let age = 40;
+    console.log('iniside 1st block scope', age);
+    
+}
+
+console.log('outside code block: ', age);
