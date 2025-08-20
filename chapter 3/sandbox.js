@@ -104,8 +104,15 @@ let age = 30;
 
 if (true) {
     let age = 40;
-    console.log('iniside 1st block scope', age);
+    let name = 'shewa'
+    console.log('iniside 1st block scope', age, name);
     
+   if (true) {
+    // const age = 80;
+    console.log('inside 2nd block: ', age);
+    
+   }
+
 }
 
-console.log('outside code block: ', age);
+console.log('outside code block: ', age, name);
