@@ -45,9 +45,13 @@
     
 // }
 
-const password = 'passhhhhhhhh';
+const password = 'pasddddhddddddddh';
 
-if (password.length >=8) {
+if (password.length >= 12) {
     console.log('passsord is strong enough');
+    } else if (password.length >= 8) {
+        console.log('That password is long enough !');
+}  else {
+    console.log('Password is not long enough');
     
 }
