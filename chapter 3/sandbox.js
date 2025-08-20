@@ -48,10 +48,28 @@
 const password = 'sddh';
 
 if (password.length >= 12 && password.includes('@')) {
-    console.log('password is mighty enough');
+    // console.log('password is mighty enough');
     } else if (password.length >= 8 || password.includes('@') && password.length>= 5) {
-        console.log('That password is Strong enough !');
+       // console.log('That password is Strong enough !');
 }  else {
-    console.log('Password is not strong enough');
+    //console.log('Password is not strong enough');
+    
+}
+
+
+const scores = [ 50, 89, 0, 56, 100, 24, 76];
+
+for (let index = 0; index < scores.length; index++) {
+    
+    if (scores[index] === 0) {
+       continue; 
+    }
+
+console.log('Your scores:', scores[index]);
+
+if (scores[index] === 100) {
+    console.log('congrats, you got the top scores!');
+    break;
+}
     
 }
