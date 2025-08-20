@@ -45,13 +45,13 @@
     
 // }
 
-const password = 'pasddddhddddddddh';
+const password = 'sddh';
 
-if (password.length >= 12) {
-    console.log('passsord is strong enough');
-    } else if (password.length >= 8) {
-        console.log('That password is long enough !');
+if (password.length >= 12 && password.includes('@')) {
+    console.log('password is mighty enough');
+    } else if (password.length >= 8 || password.includes('@') && password.length>= 5) {
+        console.log('That password is Strong enough !');
 }  else {
-    console.log('Password is not long enough');
+    console.log('Password is not strong enough');
     
 }
