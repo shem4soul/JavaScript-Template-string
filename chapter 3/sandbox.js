@@ -11,7 +11,10 @@
 const names = ['shaun', 'mario', 'luigi', 'toad'];  
 
 for (let index = 0; index < names.length; index++) {
-    console.log(names[index]);
-    
+    // console.log(names[index]);
+    let html = `<div>${names[index]}</div>`
+    console.log(html);
     
 }
+
+
