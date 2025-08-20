@@ -65,11 +65,36 @@ for (let index = 0; index < scores.length; index++) {
        continue; 
     }
 
-console.log('Your scores:', scores[index]);
+//console.log('Your scores:', scores[index]);
 
 if (scores[index] === 100) {
-    console.log('congrats, you got the top scores!');
+    //console.log('congrats, you got the top scores!');
     break;
 }
+    
+}
+
+
+// switch statements
+const grade = 'D';
+
+switch (grade) {
+  case "A":
+    console.log("You got an A!");
+    break;
+  case "B":
+    console.log("You got an B!");
+    break;
+  case "C":
+    console.log("You got an C");
+    break;
+  case "D":
+    console.log("You got an D!");
+    break;
+  case "E":
+    console.log("You got an E!");
+    break;
+  default:
+    console.log('Not a valid grade');
     
 }
