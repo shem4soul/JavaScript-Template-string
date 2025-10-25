@@ -5,7 +5,10 @@ let user = {
     age: 30,
     email: 'crystal@thenetninja.com',
     location: 'berlin',
-    blogs: ['why mac & chesse rules', '10 things to make with marmite'],
+    blogs: [
+        {title: 'why mac & chesse rules', likes: 30},
+        {title: '10 things to make with marmite', likes: 50},
+    ],
     login: function () {
         console.log('The user logged in');
     },
@@ -16,7 +19,7 @@ let user = {
     logBlogs: function (params) {
         console.log('This user has written the following Blogs:');
        this.blogs.forEach(blog =>{
-        console.log(blog);
+        console.log(blog.title, blog.likes);
        })      
     }
 };
