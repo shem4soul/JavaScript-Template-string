@@ -49,12 +49,25 @@
      
 // })
 
-const content = document.querySelector('.content');
-// console.log(content.innerHTML);
-// content.innerHTML += '<h2>This is a new h2</h2>';
+// const content = document.querySelector('.content');
+// // console.log(content.innerHTML);
+// // content.innerHTML += '<h2>This is a new h2</h2>';
 
-const people = ['mario', 'luigi', 'yoshi'];
+// const people = ['mario', 'luigi', 'yoshi'];
 
-people.forEach(person => {
-  content.innerHTML += `<p>${person}</p>`;
-})
+// people.forEach(person => {
+//   content.innerHTML += `<p>${person}</p>`;
+// })
+
+
+const link = document.querySelector('a');
+
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+link.innerText = ' The net ninja website';
+
+
+const mssg = document.querySelector('p');
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success');
+mssg.setAttribute('style', 'color:red;');
